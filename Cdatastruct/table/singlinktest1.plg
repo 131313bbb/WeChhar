@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: singlinktest1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Lenovo\AppData\Local\Temp\RSP41D5.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/singlinktest1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c"
+]
+Creating command line "cl.exe @C:\Users\Lenovo\AppData\Local\Temp\RSP41D5.tmp" 
+Creating temporary file "C:\Users\Lenovo\AppData\Local\Temp\RSP41D6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/singlinktest1.pdb" /debug /machine:I386 /out:"Debug/singlinktest1.exe" /pdbtype:sept 
+.\Debug\singlinktest1.obj
+]
+Creating command line "link.exe @C:\Users\Lenovo\AppData\Local\Temp\RSP41D6.tmp"
+<h3>Output Window</h3>
+Compiling...
+singlinktest1.c
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(79) : error C2275: 'link' : illegal use of this type as an expression
+        C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(11) : see declaration of 'link'
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(79) : error C2065: 'temp' : undeclared identifier
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(80) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct Link *'
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(81) : error C2143: syntax error : missing ';' before 'type'
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(82) : error C2223: left of '->next' must point to struct/union
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(82) : error C2065: 'i' : undeclared identifier
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(84) : error C2223: left of '->next' must point to struct/union
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(89) : error C2223: left of '->next' must point to struct/union
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(89) : error C2223: left of '->next' must point to struct/union
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(123) : error C2143: syntax error : missing ';' before 'type'
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(124) : error C2275: 'link' : illegal use of this type as an expression
+        C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(11) : see declaration of 'link'
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(124) : error C2065: 'now' : undeclared identifier
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(125) : warning C4047: '=' : 'int ' differs in levels of indirection from 'struct Link *'
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(126) : warning C4047: '!=' : 'int ' differs in levels of indirection from 'void *'
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(126) : error C2065: 'j' : undeclared identifier
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(129) : error C2223: left of '->next' must point to struct/union
+C:\Users\Lenovo\Desktop\Cdatastruct\table\singlinktest1.c(132) : error C2223: left of '->item' must point to struct/union
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+singlinktest1.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

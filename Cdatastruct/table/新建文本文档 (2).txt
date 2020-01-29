@@ -1,0 +1,126 @@
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct Link{
+ int item;
+struct Link *next;
+
+
+
+
+}link;
+link* createTable();
+link* insert(link*p,int item);
+link* delete(link*p,int index);
+link* updata(link*p,int index,int item);
+int size(link*p);
+void print(link*p);
+int main(){
+link*p=createTable();
+p=insert(p,363663);
+p=insert(p,3664);
+p=insert(p,3674848);
+printf("链表内容如下:\n");
+print(p);
+
+return 0;
+
+}
+link* createTable(){
+link*p=(link *)malloc(sizeof(link));
+p->item=-1;
+p->next=NULL;
+
+return p;
+
+}
+
+link* insert(link*p,int item){
+
+if(p->item==-1){
+
+p->item=item;
+return item;
+}
+else{
+link* temp=(link*)malloc(sizeof(link));
+temp->item=item;
+temp->next=NULL;
+link* now=p;
+while(now->next!=NULL){
+
+now=now->next;
+
+}
+now->next=temp;
+return p;
+
+
+
+}
+
+
+
+}
+link* delete(link*p,int index){
+if(p->item==-1){
+return p; 
+
+}
+link*temp=p;
+int i=1;
+while(temp->next!=NULL**index!=i){
+
+temp=temp->next;
+i++;
+
+}
+if(index==i)
+temp->next=temp->next->next;
+return p;
+
+
+
+}
+link* updata(link*p,int index,int item){
+if(index<0||index>=size(p)){
+printf("下标错误\n");
+}
+link*temp=p;
+int i=0;
+while(temp){
+temp=temp->next;
+i++;
+
+
+}
+if(i==index)
+temp->item=item;
+return p;
+
+
+}
+int size(link*p){
+
+int size=0;
+link*temp=p;
+while(temp){
+temp=temp->next;
+size++;
+
+}
+return size;
+
+
+}
+void print(link*p){
+link*temp=p;
+while(temp){
+printf("%d ",temp->item);
+
+
+}
+putchar('\n');
+
+
+
+}

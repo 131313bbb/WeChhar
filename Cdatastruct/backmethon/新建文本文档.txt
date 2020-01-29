@@ -1,0 +1,33 @@
+#include<stdio.h>
+int set[5];
+void PowerSet(int i,int n){
+int j;
+if(i>n){
+for(j=1;j<n;j++){
+if(set[j]==1){
+
+printf("%d ",j);
+}
+
+
+}
+
+putchar('\n');
+}else{
+set[i];PowerSet(i+1,n);
+set[i]=0;PowerSet(i+1,n);
+
+}
+
+
+}
+int main(){
+
+int n=3;
+int i;
+for(i=0;i<5;i++){
+set[i]=0;
+}
+PowerSet(1,n);
+return 0;
+}

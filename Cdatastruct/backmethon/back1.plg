@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: back1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Lenovo\AppData\Local\Temp\RSP4A4D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/back1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c"
+]
+Creating command line "cl.exe @C:\Users\Lenovo\AppData\Local\Temp\RSP4A4D.tmp" 
+Creating temporary file "C:\Users\Lenovo\AppData\Local\Temp\RSP4A4E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/back1.pdb" /debug /machine:I386 /out:"Debug/back1.exe" /pdbtype:sept 
+.\Debug\back1.obj
+]
+Creating command line "link.exe @C:\Users\Lenovo\AppData\Local\Temp\RSP4A4E.tmp"
+<h3>Output Window</h3>
+Compiling...
+back1.c
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(13) : error C2143: syntax error : missing ';' before 'type'
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(16) : error C2001: newline in constant
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(17) : error C2146: syntax error : missing ')' before identifier 'scanf'
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(21) : error C2065: 'a' : undeclared identifier
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(21) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'int '
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(21) : warning C4024: 'print' : different types for formal and actual parameter 1
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(23) : warning C4047: 'function' : 'int *' differs in levels of indirection from 'int '
+C:\Users\Lenovo\Desktop\Cdatastruct\backmethon\back1.c(23) : warning C4024: 'back' : different types for formal and actual parameter 3
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+back1.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
